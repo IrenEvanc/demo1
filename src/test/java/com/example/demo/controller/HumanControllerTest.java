@@ -1,30 +1,26 @@
-package com.example.demo.controller;
-
-import com.example.demo.entity.Human;
-import com.example.demo.repository.HumanRepository;
-import org.junit.jupiter.api.Test;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.testng.annotations.BeforeClass;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.mock;
-
-public class HumanControllerTest {
-
-    private static HumanController HumanController;
-    private static HumanRepository mockedHumanRepository;
-    private static BindingResult mockedBindingResult;
-    private static Model mockedModel;
-
-    @BeforeClass
-    public static void setUpHumanControllerInstance() {
-        mockedHumanRepository = mock(HumanRepository.class);
-        mockedBindingResult = mock(BindingResult.class);
-        mockedModel = mock(Model.class);
-        HumanController = new HumanController(mockedHumanRepository);
-    }
+//package com.example.demo.controller;
+//
+//import org.springframework.ui.Model;
+//import org.springframework.validation.BindingResult;
+//import org.testng.annotations.BeforeClass;
+//
+//import static org.assertj.core.api.Assertions.assertThat;
+//import static org.mockito.Mockito.mock;
+//
+//public class HumanControllerTest {
+//
+//    private static HumanController HumanController;
+//    private static HumanRepository mockedHumanRepository;
+//    private static BindingResult mockedBindingResult;
+//    private static Model mockedModel;
+//
+//    @BeforeClass
+//    public static void setUpHumanControllerInstance() {
+//        mockedHumanRepository = mock(HumanRepository.class);
+//        mockedBindingResult = mock(BindingResult.class);
+//        mockedModel = mock(Model.class);
+//        HumanController = new HumanController(mockedHumanRepository);
+//    }
 /*
     @Test
     public void whenCalledIndex_thenCorrect() {
@@ -40,7 +36,7 @@ public class HumanControllerTest {
 
         assertThat(HumanController.showSignUpForm(human)).isEqualTo("addHuman");
     }
-
+/*
     @Test
     public void whenCalledaddUserAndValidUser_thenCorrect() {
         User user = new User("John", "john@domain.com");
@@ -88,4 +84,4 @@ public class HumanControllerTest {
     }
 
  */
-}
+//}
